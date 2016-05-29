@@ -1,0 +1,18 @@
+{
+  "name": "simple-cli-parser",
+  "version": "0.0.1",
+  "description": "child_process via spawn parser, very simple.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "cli",
+    "spawn",
+    "process",
+    "child",
+    "es6",
+    "child_process"
+  ],
+  "author": "Lee M (lee@hma.co.uk)",
+  "license": "ISC",
+  "repository": "https://github.com/leemm/simple-cli-parser.git"
+}
