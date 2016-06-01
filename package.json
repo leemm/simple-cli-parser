@@ -1,6 +1,6 @@
 {
   "name": "simple-cli-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "child_process via spawn parser, very simple.",
   "main": "index.js",
   "scripts": {},
