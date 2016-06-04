@@ -14,5 +14,6 @@
   ],
   "author": "Lee M (lee@hma.co.uk)",
   "license": "ISC",
-  "repository": "https://github.com/leemm/simple-cli-parser.git"
+  "repository": "https://github.com/leemm/simple-cli-parser.git",
+  "keywords": [ "cli", "parser", "spawn", "process" ]
 }
