@@ -19,7 +19,7 @@ To see the result of ls -la.
 
 const cli = require('simple-cli-parser');
 
-let download = new cli([ 'ls', '-la', __dirname ])
+let ls = new cli([ 'ls', '-la', __dirname ])
     .then(res => { console.log('Success!', res); })
     .catch(err => { console.log('Failed!'); });
 ```

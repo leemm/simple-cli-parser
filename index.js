@@ -24,8 +24,12 @@ class cli {
         // Spawn request
 
         proc.stderr.on('data', (data) => {
-            res.push(data.toString().split('\n')[0]);
-            onData(res[res.length - 1]);
+            if (onData){
+                res.push(data.toString().split('\n')[0]);
+                onData(res[res.length - 1]);
+            }else{
+                res = res.concat(data.toString().split('\n'));
+            }
         });
 
         return new Promise((resolve, reject) => {

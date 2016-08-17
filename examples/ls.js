@@ -2,6 +2,6 @@
 
 const cli = require('../index');
 
-let download = new cli([ 'ls', '-la', __dirname ])
+let ls = new cli([ 'plutil', '--help' ])
 	.then(res => { if (res){ console.log('Success!', res); } })
 	.catch(err => { if (err){ console.log('Failed!'); } });
