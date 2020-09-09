@@ -9,9 +9,10 @@ class cli {
      * @private
      * @param  {Array}  cmd
      * @param  {Function}  onData // if need to track status of stderr (curl downloads etc.)
+     * @param  {Object}  options // optional, if provided, 
      * @return {Promise}
      */
-    constructor(cmd, onData) {
+    constructor(cmd, onData, options = {}) {
 
     	// Get parameters
         if (!Array.isArray(cmd)){ cmd = [ cmd ]; }
@@ -19,7 +20,7 @@ class cli {
         let first = cmd[0], res = [], finalResult;
         cmd.shift();
 
-        const proc = spawn(first, cmd);
+        const proc = spawn(first, cmd, options);
 
         // Spawn request
 
